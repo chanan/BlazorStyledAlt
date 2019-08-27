@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<ServerSideStyled />
+
+<Styled @bind-Classname="@p">
+    color: red;
+</Styled>
+
+<h3>Index</h3>
+
+<p class="@p">If this is red then BlazorStyled is working!</p>
+
+@code {
+    private string p;
+}
